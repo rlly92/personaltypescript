@@ -1,3 +1,22 @@
+// _____________TYPES FOR CONTACT FORM:_______________//
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phoneNumber: string;
+  message: string;
+}
+
+// _____________TYPES FOR PROJECT MODAL:______________//
+
+export interface ProjectModal {
+  id: number;
+  title: string;
+  description: string;
+  image?: URL;
+}
+
+// ____________________Mark's templates for exporting Typescript Types___________________//
+
 export type ProjectType = "design" | "code" | "photo" | null;
 
 export type LinkType = {

@@ -1,0 +1,20 @@
+import React from "react";
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <h1>ABOUT ME</h1>
+      <p>
+        THIS WEBSITE WAS CREATED BECAUSE SOME PROSPECTIVE EMPLOYERS DECIDED THEY
+        NEEDED TO SEE MY PORTFOLIO DISPLAYED ON SOME ARBITRARY SITE WHEN THEY
+        COULD JUST CLICK ON THE LINKS THAT I'VE PAINSTAKINGLY ADDED TO MY CV
+        WHICH THEY GET ANYWAYS WHEN I SEND IN MY JOB APPLICATION. TALK ABOUT A
+        POINTLESS PROJECT....ANYWAYS AS YOU ALREADY GUESSED...
+        <br />
+        <br />I LOVE FRONTEND DESIGN. /s
+      </p>
+    </div>
+  );
+};
+
+export default Home;
