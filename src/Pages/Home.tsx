@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         WHICH THEY GET ANYWAYS WHEN I SEND IN MY JOB APPLICATION. TALK ABOUT A
         POINTLESS PROJECT....ANYWAYS AS YOU ALREADY GUESSED...
         <br />
-        <br />I LOVE FRONTEND DESIGN.
+        <br />I LOVE FRONTEND DESIGN. /s
       </p>
     </div>
   );
