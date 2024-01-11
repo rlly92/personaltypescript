@@ -1,0 +1,7 @@
+type ContactFormData @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  email: String
+  phoneNumber: String
+  message: String
+} 

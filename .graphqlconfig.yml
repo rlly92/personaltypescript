@@ -1,0 +1,15 @@
+projects:
+  personalPortfolio:
+    schemaPath: amplify/backend/api/personalPortfolio/build/schema.graphql
+    includes:
+      - ''
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: .
+        region: ap-southeast-1
+        apiId: null
+        maxDepth: 2

@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { ContactFormData } from "../Types/CustomTypes";
+import { generateClient } from "aws-amplify/api";
+import { createContactFormData } from "../mutations";
+
+const client = generateClient();
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -29,6 +33,20 @@ const Contact: React.FC = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     // You can also add form validation or other logic here: submit to AWS Backend:
+
+    const newContactFormData = async () =>
+      await client.graphql({
+        query: createContactFormData,
+        variables: {
+          input: {
+            name: "Lorem ipsum dolor sit amet",
+            email: "Lorem ipsum dolor sit amet",
+            phoneNumber: "Lorem ipsum dolor sit amet",
+            message: "Lorem ipsum dolor sit amet",
+          },
+        },
+      });
+    newContactFormData();
   };
 
   return (
