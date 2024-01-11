@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
 
   return (
     <div>
-      <h1>PLEASE HESITATE TO REACH OUT TO ME.</h1>
+      <h1>PLEASE HESITATE TO REACH OUT TO ME</h1>
 
       <h5>Fill in this form and I will get back to you in a jiffy!</h5>
 
